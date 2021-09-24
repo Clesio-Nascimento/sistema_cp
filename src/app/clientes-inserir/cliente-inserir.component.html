@@ -1,0 +1,56 @@
+<h2>Cadastro de clientes</h2>
+
+<form class="formCadastro">
+    <mat-form-field class="larguraCamposCadastro" appearance="fill">
+    <mat-label>Empresa</mat-label>        
+    <input 
+        matInput disabled value="CP">
+    </mat-form-field>
+
+    <table class="larguraCamposCadastro" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="larguraCamposCadastro" appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text">
+            </mat-form-field></td>
+            <td>
+                <mat-form-field class="larguraCamposCadastro" appearance="fill">
+                    <mat-label>Sobrenome</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <mat-form-field class="larguraCamposCadastro" appearance="fill">
+            <mat-label>Endereço</mat-label>
+            <textarea matInput placeholder="rua - nº"></textarea>
+        </mat-form-field>
+    </p>
+   
+    <table class="larguraCamposCadastro" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="larguraCamposCadastro" appearance="fill">
+                    <mat-label>Cidade</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="larguraCamposCadastro" appearance="fill">
+                    <mat-label>Estado</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="larguraCamposCadastro" appearance="fill">
+                    <mat-label>CEP</mat-label>
+                    <input matInput #CEP maxlength="8" type="number">
+                    <mat-hint align="end">{{CEP.value.length}} / 8</mat-hint>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+   
+</form>
